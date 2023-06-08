@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url(../resourse/normaliz-style-min.css);
+@import url(../resourse/fem-footer-style.css);
+
+// # Front-end Style Guide
+// ## Layout
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+// ### Primary
+$color-Cyan: hsl(179, 62%, 43%);
+$color-Bright-Yellow: hsl(71, 73%, 54%);
+
+// ### Neutral
+$color-Light-Gray: hsl(204, 43%, 93%);
+$color-Grayish-Blue: hsl(218, 22%, 67%);
+
+// ## Typography
+$ont-size-paragraf: 16px;
+
+// ### Font
+$font-family: "Karla";
+$fWeights400: 400;
+$fWeights700: 700;
+
+// ## my_Variables
+$conteiner-w: 640px;
+$conteiner-h: 475px;
+$item-w: 320px;
+$item-h: 260px;
+
+// ================== //
+// ### main styles
