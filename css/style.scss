@@ -16,9 +16,10 @@ $color-Bright-Yellow: hsl(71, 73%, 54%);
 // ### Neutral
 $color-Light-Gray: hsl(204, 43%, 93%);
 $color-Grayish-Blue: hsl(218, 22%, 67%);
+$color-bg: #e6eff6;
 
 // ## Typography
-$ont-size-paragraf: 16px;
+$font-size-paragraf: 16px;
 
 // ### Font
 $font-family: "Karla";
@@ -33,3 +34,75 @@ $item-h: 260px;
 
 // ================== //
 // ### main styles
+body {
+	font-family: $font-family;
+	font-size: $font-size-paragraf;
+	background-color: $color-bg;
+}
+
+.conteiner {
+	width: 100%;
+	min-height: 100vh;
+
+	@media (max-width: 768px) {
+		margin: 30px 0;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.j-center {
+	justify-content: center;
+}
+
+.a-center {
+	align-items: center;
+}
+
+// ================== //
+// ### grid styles
+
+.grid {
+	margin: auto 20px;
+
+	@media (min-width: 375px) {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: repeat(auto-fit, minmax($item-w, 1fr));
+		gap: 20px;
+		justify-items: center;
+		align-items: center;
+	}
+}
+
+.grid__item {
+	@media (max-width: 375px) {
+		margin-bottom: 30px;
+	}
+	@media (min-width: 375px) {
+		width: 100%;
+	}
+}
+
+.col-2 {
+	@media (min-width: 576px) {
+		grid-column: span 2;
+	}
+}
+
+// ================== //
+// ### item styles
+
+.Header {
+}
+
+.Subscription {
+}
+
+.btn {
+}
+
+.Whyus {
+}

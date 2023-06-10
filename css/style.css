@@ -1,3 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 @import url(../resourse/normaliz-style-min.css);
-@import url(../resourse/fem-footer-style.css);/*# sourceMappingURL=style.css.map */
+@import url(../resourse/fem-footer-style.css);
+body {
+  font-family: "Karla";
+  font-size: 16px;
+  background-color: #e6eff6;
+}
+
+.conteiner {
+  width: 100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .conteiner {
+    margin: 30px 0;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.grid {
+  margin: auto 20px;
+}
+@media (min-width: 375px) {
+  .grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid__item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 375px) {
+  .grid__item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-2 {
+    grid-column: span 2;
+  }
+}/*# sourceMappingURL=style.css.map */
